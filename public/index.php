@@ -2,7 +2,7 @@
 /**
  * Created in PhpStorm withGithub and Heroku.
  * User: divadea
- * Date: 3/11/2019
+ * Date: 3/10/2019
  *
  */
 
@@ -18,10 +18,11 @@ class main {
 
      #   $record = recordFactory::create();
        # print ('<table>');
-        print("<h1>My contacts</h1>");
-        print("<p>testingtesting</p>");
+        print("<h1>DivaDea's contacts</h1>");
+        print("<p>I like to keep track of my friends and family.  I am also an avid animal lover so i 
+want to make sure i remember if they have animals.  I like to track that informatioon so i dont forget it.  </p>");
         print($table);
-       # print('</table>');
+
 
     }
 }
@@ -75,26 +76,7 @@ class html{
                 }
                 $table1 .= '</tr>';
 
-               # print_r($values);
-            /*}else{
 
-                #$table1 .= $this-> generateRow($record, $count);
-                $array = $record->returnArray();
-                $values = array_values($array);
-                #print_r($values);
-                $table1 .= '<tr><th scope = "row">';
-                $table1 .= (string)$count;
-                $table1 .= '</th>';
-
-                foreach($values as $s){
-                    $table1 .= '<td>';
-                    $table1 .= $s;
-                    $table1 .= '</td>';
-                }
-                $table1 .= '</tr>';
-
-
-            }*/
 
             $count++;
 
@@ -102,37 +84,7 @@ class html{
 
         $table1 .= '</tbody></table>';
 
-       /* $table = '';
-        $table .=  '<table class ="table">
-                    <thead>
-                    <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">First</th>
-                      <th scope="col">Last</th>
-                      <th scope="col">Handle</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Mark</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>@fat</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Larry</td>
-                      <td>the Bird</td>
-                      <td>@twitter</td>
-                    </tr>
-                  </tbody>';
-        $table .= '</table>';*/
+
         return $table1;
     }
 }
