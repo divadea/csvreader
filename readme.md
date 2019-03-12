@@ -1,4 +1,5 @@
-#My Mini project 1 for IS601
+This is my first app.
 
-The app in heroku:
-https://safe-sierra-64919.herokuapp.com/ 
+If you have any questions, please email me bridge.dea@gmail.com.
+
+Divadea
