@@ -18,7 +18,8 @@ class main {
 
      #   $record = recordFactory::create();
        # print ('<table>');
-        print("<h1>My contacts</h1>>");
+        print("<h1>My contacts</h1>");
+        print("<p>testingtesting</p>");
         print($table);
        # print('</table>');
 
@@ -28,26 +29,6 @@ class main {
 
 class html{
 
-    /*public  function generateRow($record,$count) {
-
-        $array = $record->returnArray();
-        $values = array_values($array);
-        #print_r($values);
-        $table1 = '<tr><th scope = "row">';
-        $table1 .= (string)$count;
-        $table1 .= '</th>';
-
-        foreach($values as $s) {
-            $table1 .= '<td>';
-            $table1 .= $s;
-            $table1 .= '</td>';
-
-        }
-
-        return $table1;
-
-    }*/
-    #$table1 ='';
 
     public static function generateTable($records) {
 
