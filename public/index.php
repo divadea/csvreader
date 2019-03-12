@@ -18,7 +18,7 @@ class main {
 
      #   $record = recordFactory::create();
        # print ('<table>');
-        print("<h1>My contacts</h1>>"):
+        print("<h1>My contacts</h1>>");
         print($table);
        # print('</table>');
 
