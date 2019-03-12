@@ -61,7 +61,7 @@ class html{
                     $table1 .= $s;
                     $table1 .= '</th>';
                 }
-                #print_r($fields);
+
                 $table1 .= '</tr></thead>';
                 $table1 .= '<tbody>';
             }
@@ -103,55 +103,36 @@ class csv {
         while(! feof($file))
         {
             $record = fgetcsv($file);
-
             if($count == 0){
-
                 $fieldNames = $record;
             }else {
                 $records[] = recordFactory::create($fieldNames, $record);
             }
-
             $count++;
         }
-
         fclose($file);
         return $records;
-
     }
-
 }
 
 
 class record {
-
     public function __construct(Array $fieldNames = null, Array $values = null)
     {
-       # print_r($values);
-        #print_r($fieldNames);
         $record = array_combine($fieldNames,$values);
-
         foreach ($record as $property => $value) {
-
-            $this->createProperty($property, $value);
-
+        $this->createProperty($property, $value);
         }
-        #print_r($record);
-
-       # print_r($this);
     }
 
 
     public function returnArray() {
-        $array = (array)$this;
-        #print_r($this);
-        return $array;
+    $array = (array)$this;
+    return $array;
     }
     public function createProperty($colname = 'firstname', $value = 'jun' ) {
-
-        $this->{$colname} = $value;
+    $this->{$colname} = $value;
     }
-
-
 }
 
 
@@ -160,24 +141,8 @@ class recordFactory {
     static public function create(Array $fieldNames = null,  Array $values = null) {
 
        $record = new record($fieldNames, $values);
-        #print_r($fieldNames);
-       # print_r($record);
         return $record;
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
